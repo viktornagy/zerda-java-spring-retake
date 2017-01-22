@@ -36,6 +36,7 @@ Build a simple URL shortener that people can use to slim down their long URLs.
     - generate a 6 character long random string and store it along with the url
     - render the show page
 - should have an endpoint which accepts a url parameter
+    - eg. `/shorten/r4nd0m`
     - searches for the url parameter in the database to get the original url
     - redirects to the original url
     - redirects to the index page if not found
