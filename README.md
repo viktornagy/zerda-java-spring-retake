@@ -3,7 +3,7 @@
 ### Getting Started
  - Fork this repository under your own account
  - Clone the forked repository to your computer
- - As opposed to the usual thing, please **commit only ONCE, at the end of the exam**
+ - Commit your changes frequently
  - Go through the whole description before starting it
 
 ### What can I use?
