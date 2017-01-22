@@ -10,7 +10,6 @@
  - You can use any resource online, but **please work individually**
  - Instead of copy-pasting your answers and solutions, write them in your own words.
 
-# Tasks
 ## The URL shortener website
 Build a simple URL shortener that people can use to slim down their long URLs.
 
