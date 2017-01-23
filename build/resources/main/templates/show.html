@@ -6,11 +6,15 @@
 </head>
 <body>
 <h1>Short URL was created!</h1>
-<div th:each="url : ${UrlCouple}">
-    <p>The original URL:</p>>
-    <p th:text="*{url.originalUrlAddress}">  </p>
+<div th:object="${urlCoupleTwo}">
+    <p>The original URL:</p>
+    <p th:text="*{originalUrlAddress}">  </p>
     <p>The shorter version of the URL:</p>
-    <p th:text="*{url.shortHtmlAddress}">  </p>
+    <p  th:text="http+':' + '/'+'/'+localhost+':'+'8080'+'/'+shorten+'/'+*{sixLongRandomString}">  </p>
+    <a th:href="http+':' + '/'+'/'+localhost+':'+'8080'+'/'+shorten+'/'+*{sixLongRandomString}" th:text="http+':' + '/'+'/'+localhost+':'+'8080'+'/'+shorten+'/'+*{sixLongRandomString}"></a>
+</div>
+<div>
+    <a th:href="@{''}">Back to the main page</a>
 </div>
 
 </body>
