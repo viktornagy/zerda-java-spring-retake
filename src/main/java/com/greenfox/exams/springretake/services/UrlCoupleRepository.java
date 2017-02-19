@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by Viktor on 2017.01.23..
  */
-public interface UrlCoupleRepository extends CrudRepository<UrlCouple, String> {
+public interface UrlCoupleRepository extends CrudRepository<UrlCouple, Long> {
 
     UrlCouple findOneBySixLongRandomString(String sixLongRandomString);
 

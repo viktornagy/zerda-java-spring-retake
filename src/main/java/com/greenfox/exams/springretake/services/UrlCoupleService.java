@@ -3,7 +3,7 @@ package com.greenfox.exams.springretake.services;
 import com.greenfox.exams.springretake.models.UrlCouple;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import javax.servlet.http.HttpServletRequest;
+
 import java.util.Random;
 
 
@@ -22,20 +22,8 @@ public class UrlCoupleService {
 
     }
 
-    public Iterable<UrlCouple> list() {
-        return repository.findAll();
-    }
-
-    public UrlCouple find(String sixLongRandomString) {
-        return repository.findOne(sixLongRandomString);
-    }
-
     public void saveUrlCouple(UrlCouple urlCouple) {
         repository.save(urlCouple);
-    }
-
-    public UrlCouple findRealUrl(String shortAddress){
-        return repository.findOneBySixLongRandomString(shortAddress);
     }
 
 
@@ -56,5 +44,4 @@ public class UrlCoupleService {
             urlCouple.setOriginalUrlAddress(("http://")+sb.toString());
         }
     }
-
 }
